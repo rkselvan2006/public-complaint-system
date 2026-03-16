@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Public Complaint System</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="floating-shapes"></div>
 
-<div class="form-box">
+<div class="main-container">
 
-<div class="button-box">
-<button onclick="showLogin()">Login</button>
-<button onclick="showRegister()">Register</button>
+<div class="left-panel">
+
+<h1 class="title">Public Complaint System</h1>
+
+<p class="description">
+Report civic problems like road damage, street lights,
+garbage issues and help improve your city.
+</p>
+
 </div>
 
-<!-- Login Form -->
+<div class="right-panel">
 
-<form id="loginForm" class="form">
-<h2>Login</h2>
+<div class="tabs">
 
-<input type="email" placeholder="Email" required>
+<button id="loginTab" class="active">Login</button>
+<button id="registerTab">Register</button>
+
+</div>
+
+<form id="loginForm">
+
+<input type="email" placeholder="Email Address" required>
 
 <input type="password" placeholder="Password" required>
 
-<button type="submit" class="submit-btn">Login</button>
+<button type="submit" class="btn">Login</button>
 
 </form>
 
-<!-- Register Form -->
-
-<form id="registerForm" class="form hidden">
-<h2>Register</h2>
+<form id="registerForm">
 
 <input type="text" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email" required>
+<input type="email" placeholder="Email Address" required>
 
 <input type="password" placeholder="Password" required>
 
 <input type="password" placeholder="Confirm Password" required>
 
-<button type="submit" class="submit-btn">Register</button>
+<button type="submit" class="btn">Register</button>
 
 </form>
 
